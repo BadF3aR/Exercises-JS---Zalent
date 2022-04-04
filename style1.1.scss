@@ -1,0 +1,10 @@
+body
+{
+    display: flex;
+    justify-content: space-evenly;
+    #result
+    {
+        min-width: 10vw;
+        background-color: red;
+    }
+}
