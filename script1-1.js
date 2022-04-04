@@ -8,5 +8,5 @@ function write()
     {
         space = space + i + " ";
     }
-    document.getElementById("result").innerHTML = "jebac kurwy";
+    document.getElementById("result").innerHTML = space;
 }
