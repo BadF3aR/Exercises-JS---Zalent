@@ -1,4 +1,32 @@
 body
 {
+    margin: 0;
     background-color: rgb(70, 70, 70);
+    .container
+    {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .haslo
+        {
+            max-width: 100%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            text-align: center;
+            border: 2px solid greenyellow;
+            font-size: 2em;
+        }
+        .plansza
+        {
+            display: flex;
+            justify-content: center;
+            .obrazek ,.litery
+            {
+                border: 2px solid green;
+                max-width: 50%;
+                text-align: center;
+                max-height: 50%;
+            }
+        }
+    }
 }
