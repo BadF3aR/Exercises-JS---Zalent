@@ -1,0 +1,14 @@
+body {
+  background-color: #575757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #slider {
+  margin-top: 15%;
+}
+/*# sourceMappingURL=exercise1-3.css.map */
