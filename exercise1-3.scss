@@ -2,9 +2,19 @@ body
 {
     background-color: rgb(87, 87, 87);
     display: flex;
-    justify-content: center;
-    #slider
+    flex-direction: column;
+    align-items: center;
+    #pudlo
     {
-        margin-top: 15%;
+        display: flex;
+        justify-content: space-around;
+       /*  border: 1px solid black; */
+        min-width: 44vw;
+        font-size: 2em;
+        padding: 1rem;
+        div:hover
+        {
+            cursor: pointer;
+        }
     }
 }
