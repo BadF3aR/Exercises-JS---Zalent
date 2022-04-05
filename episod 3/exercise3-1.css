@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-color: #464646;
+  background-color: black;
+  color: white;
 }
 
 body .container {
@@ -28,7 +29,7 @@ body .container #plansza {
 }
 
 body .container #plansza #obrazek, body .container #plansza #litery {
-  border: 2px solid green;
+  border: 2px solid white;
   max-width: 50%;
   text-align: center;
   max-height: auto;
