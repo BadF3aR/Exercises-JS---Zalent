@@ -26,7 +26,7 @@ function zmienslajd()
     var plik = "<img src=\"slajdy/slajd" + numer + ".png\" />";
 
     document.getElementById("slider").innerHTML = plik;
-    $("#slider").fadeIn(500);
+    $("#slider").fadeIn(500); 
 
     timer1 = setTimeout("zmienslajd()", 5000);
     timer2 = setTimeout("schowaj()", 4500);
