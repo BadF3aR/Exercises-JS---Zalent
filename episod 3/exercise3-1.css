@@ -9,7 +9,7 @@ body .container {
   margin-right: auto;
 }
 
-body .container .haslo {
+body .container #haslo {
   max-width: 100%;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -18,7 +18,7 @@ body .container .haslo {
   font-size: 2em;
 }
 
-body .container .plansza {
+body .container #plansza {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,10 +27,38 @@ body .container .plansza {
           justify-content: center;
 }
 
-body .container .plansza .obrazek, body .container .plansza .litery {
+body .container #plansza #obrazek, body .container #plansza #litery {
   border: 2px solid green;
   max-width: 50%;
   text-align: center;
-  max-height: 50%;
+  max-height: auto;
+}
+
+body .container #plansza #litery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container #plansza #litery .litera {
+  max-width: 20px;
+  max-height: 20px;
+  text-align: center;
+  padding: 2%;
+  margin: 2%;
+  border: 2px solid grey;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body .container #plansza #litery .litera:hover {
+  background-color: #1a1a1a;
+  color: white;
+  border: 2px solid white;
 }
 /*# sourceMappingURL=exercise3-1.css.map */
