@@ -3,6 +3,10 @@ haslo = haslo.toUpperCase();
 
 var dlugosc = haslo.length; 
 var ile_skuch = 0;
+
+var yes = new Audio("yes.wav");
+var no = new Audio("no.wav");
+
 var haslo1 = "";
 
 for (i=0; i<dlugosc; i++)
@@ -92,6 +96,7 @@ function sprawdz(nr)
 
     if(trafiona == true) // == operator funkcji
     {
+        yes.play();
         var element = "lit" + nr;
         document.getElementById(element).style.background = "#003300";
         document.getElementById(element).style.color = "#00C000";
@@ -102,6 +107,7 @@ function sprawdz(nr)
     }
     else
     {
+        no.play();
         var element = "lit" + nr;
         document.getElementById(element).style.background = "#330000";
         document.getElementById(element).style.color = "#C00000";

@@ -23,7 +23,7 @@ body
             justify-content: center;
             #obrazek ,#litery
             {
-                border: 2px solid rgb(255, 255, 255);
+                /* border: 2px solid rgb(255, 255, 255); */
                 max-width: 50%;
                 text-align: center;
                 max-height: auto;
@@ -48,13 +48,18 @@ body
                 {
                     background-color: rgb(26, 26, 26);
                     color: white;
-                    border: 2px solid white;
+                    /* border: 2px solid white; */
                 }
                 .rest
                 {
                     font-size: 2em;
                     cursor: pointer;
                     text-decoration: underline;
+                }
+                .rest:hover
+                {
+                    color: green;
+                    height: 20px;
                 }
             }
         }

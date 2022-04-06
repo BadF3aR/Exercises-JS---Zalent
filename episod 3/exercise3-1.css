@@ -29,7 +29,7 @@ body .container #plansza {
 }
 
 body .container #plansza #obrazek, body .container #plansza #litery {
-  border: 2px solid white;
+  /* border: 2px solid rgb(255, 255, 255); */
   max-width: 50%;
   text-align: center;
   max-height: auto;
@@ -60,12 +60,17 @@ body .container #plansza #litery .litera {
 body .container #plansza #litery .litera:hover {
   background-color: #1a1a1a;
   color: white;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 body .container #plansza #litery .rest {
   font-size: 2em;
   cursor: pointer;
   text-decoration: underline;
+}
+
+body .container #plansza #litery .rest:hover {
+  color: green;
+  height: 20px;
 }
 /*# sourceMappingURL=exercise3-1.css.map */
