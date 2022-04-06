@@ -62,4 +62,10 @@ body .container #plansza #litery .litera:hover {
   color: white;
   border: 2px solid white;
 }
+
+body .container #plansza #litery .rest {
+  font-size: 2em;
+  cursor: pointer;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=exercise3-1.css.map */
