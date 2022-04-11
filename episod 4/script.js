@@ -49,3 +49,27 @@ document.write(x+"<br />");
 4. Math.trunc()
     usuniecie czesci ułamkowej 
 */ 
+
+document.write("Question 1 <br/>")
+ let pln = 1000;
+ document.write("Wpłata: " + pln +" PLN <br/>");
+//przewalutowanie
+let usd = pln / 4.00835701;
+document.write("Saldo: "+usd+" USD <br/>");
+
+usd = Math.floor(usd*100) / 100;
+document.write("Saldo: "+usd+" USD <br/>")
+//zakupy
+let zakupy = 23.99;
+document.write("Zakupy: "+zakupy+" USD <br/>")
+
+let prowizja = 0.02 * zakupy;
+document.write("Prowizja: "+prowizja+" USD <br/>")
+
+prowizja = Math.ceil(prowizja * 100) / 100; //bo do 2 miejsc po ,
+document.write("Prowizja: "+prowizja+" USD <br/>")
+//po zakupach
+
+usd = usd - zakupy - prowizja
+document.write("Saldo: "+usd+" USD");
+
