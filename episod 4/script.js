@@ -73,3 +73,8 @@ document.write("Prowizja: "+prowizja+" USD <br/>")
 usd = usd - zakupy - prowizja
 document.write("Saldo: "+usd+" USD");
 
+usd = 225.99;
+usd = Math.trunc(usd);
+document.write("<br/>Saldo: "+usd+" USD");
+
+
