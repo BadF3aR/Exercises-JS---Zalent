@@ -18,5 +18,34 @@ document.write(x+"<br />");
 
 x = 0.15 * 3;
 x = x.toFixed(2);
+document.write(x+"<br /><br />");
+
+x = 1.005
+x = Math.round(x*1000) / 1000;
 document.write(x+"<br />");
 
+x = 1.005
+x = x.toFixed(3);
+document.write(x+"<br />");
+
+Number.prototype.round = function(miejsc)   //zaokraglanie miejsc 
+{
+    return +(Math.round(this+"e+"+miejsc) + "e-" +miejsc);
+}
+
+x = 1.005
+x = x.round(2);
+document.write(x+"<br />");
+
+// te metody zaokraglania
+
+/* 
+1. Math.round()
+    standardowe zaokraglenie 
+2. Math.floor()
+    zaokraglenie zawsze w dol 
+3. Math.ceil()
+    zaokraglenie zawsze w gore
+4. Math.trunc()
+    usuniecie czesci ułamkowej 
+*/ 
