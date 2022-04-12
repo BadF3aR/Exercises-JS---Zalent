@@ -35,14 +35,18 @@ c11.addEventListener("click", function(){ revealCard(11);});
 let oneVisible = false;
 let turnCounter = 0;
 let visible_nr;
+let lock = false;
+let pairsleft = 6;
 
 function revealCard(nr)
 {
     let opacityValue = $("#"+nr).css("opacity");
     //alert("Opacity: "+opacityValue);
 
-    if(opacityValue != 0)
+    if(opacityValue != 0 && lock == false)
     {
+        lock = true;
+
         let image = "url(img/" + cards[nr] + ")";
 
         $("#"+nr).css("background-image", image);
@@ -53,6 +57,7 @@ function revealCard(nr)
             //first card
             oneVisible = true;
             visible_nr = nr;
+            lock = false;
         }
         else
         {
@@ -80,6 +85,13 @@ function hide2Cards(nr1,nr2)
 {
     $("#"+nr1).css("opacity","0");
     $("#"+nr2).css("opacity","0");
+    lock = false;
+
+    pairsleft--;
+    if(pairsleft == 0)
+    {
+        $(".board").html("<h1>YOU WIN!<br>Done in "+turnCounter+" turns</h1>");
+    }
 }
 
 function restore2Cards(nr1,nr2)
@@ -91,4 +103,5 @@ function restore2Cards(nr1,nr2)
     $("#"+nr2).css("background-image", "url(img/karta.png");
     $("#"+nr2).addClass("card");
     $("#"+nr2).removeClass("cardA");
+    lock = false;
 }
