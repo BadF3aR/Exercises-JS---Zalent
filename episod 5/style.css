@@ -75,6 +75,20 @@ body main article .board .card {
   transition: all .3s ease-in-out;
 }
 
+body main article .board .cardA {
+  background-image: url(img/karta.png);
+  border: 4px solid #E9B64A;
+  border-radius: 5px;
+  width: 125px;
+  height: 125px;
+  margin: 5px;
+  cursor: default;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 body main article .board .card:hover {
   border-color: #E9B64A;
   -webkit-filter: brightness(100%);
