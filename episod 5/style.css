@@ -1,0 +1,41 @@
+body {
+  background-color: #292929;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+body a:link {
+  color: #209781;
+  text-decoration: none;
+}
+
+body a:visited {
+  color: #209781;
+}
+
+body a:active {
+  color: #209781;
+}
+
+body a:hover {
+  color: #E9B64A;
+}
+
+body header h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.7vw;
+  margin-top: 5vh;
+  margin-bottom: 0;
+  color: #209781;
+}
+
+body header p {
+  text-align: center;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
+  letter-spacing: 0.2vw;
+  color: #209781;
+}
+/*# sourceMappingURL=style.css.map */

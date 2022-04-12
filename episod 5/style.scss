@@ -1,0 +1,44 @@
+body
+{
+    background-color: rgb(41, 41, 41);
+    margin: 0;
+    font-size: 1.5em;
+    a:link
+    {
+        color: #209781;
+        text-decoration: none;
+    }
+    a:visited
+    {
+        color: #209781;
+    }
+    a:active
+    {
+        color: #209781;
+    }
+    a:hover
+    {
+        color: #E9B64A;
+    }
+    header
+    {
+        h1
+        {
+            font-size: 2em;
+            font-weight:bold;
+            text-align: center;
+            letter-spacing:0.7vw ;
+            margin-top: 5vh;
+            margin-bottom: 0;
+            color:#209781;
+        }
+        p
+        {   
+            text-align: center;
+            margin-top: 3vh;
+            margin-bottom: 10vh;
+            letter-spacing: 0.2vw;
+            color: #209781;
+        }
+    }
+}
