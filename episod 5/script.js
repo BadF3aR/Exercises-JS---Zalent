@@ -38,32 +38,57 @@ let visible_nr;
 
 function revealCard(nr)
 {
-    let image = "url(img/" + cards[nr] + ")";
+    let opacityValue = $("#"+nr).css("opacity");
+    //alert("Opacity: "+opacityValue);
 
-    $("#"+nr).css("background-image", image);
-    $("#"+nr).toggleClass("cardA");
-    
-    if(oneVisible == false)
+    if(opacityValue != 0)
     {
-        //first card
-        oneVisible = true;
-        visible_nr = nr;
-    }
-    else
-    {
-        //second card
-        if(cards[visible_nr] == cards[nr])
+        let image = "url(img/" + cards[nr] + ")";
+
+        $("#"+nr).css("background-image", image);
+        $("#"+nr).toggleClass("cardA");
+        
+        if(oneVisible == false)
         {
-            //alert("para")
+            //first card
+            oneVisible = true;
+            visible_nr = nr;
         }
         else
         {
-            //alert("pudło")
+            //second card
+            if(cards[visible_nr] == cards[nr])
+            {
+                //alert("para")
+                setTimeout(function() {hide2Cards(nr,visible_nr)}, 750);
+            }
+            else
+            {
+                //alert("pudło")
+                setTimeout(function() {restore2Cards(nr,visible_nr)}, 750);
+            }
+    
+            turnCounter++;
+            $(".score").html("Turn counter: "+turnCounter);
+            oneVisible = false;
         }
-
-        turnCounter++;
-        $(".score").html("Turn counter: "+turnCounter);
-        oneVisible = false;
+        //alert(nr);
     }
-    //alert(nr);
+}
+
+function hide2Cards(nr1,nr2)
+{
+    $("#"+nr1).css("opacity","0");
+    $("#"+nr2).css("opacity","0");
+}
+
+function restore2Cards(nr1,nr2)
+{
+    $("#"+nr1).css("background-image", "url(img/karta.png");
+    $("#"+nr1).addClass("card");
+    $("#"+nr1).removeClass("cardA");
+
+    $("#"+nr2).css("background-image", "url(img/karta.png");
+    $("#"+nr2).addClass("card");
+    $("#"+nr2).removeClass("cardA");
 }
