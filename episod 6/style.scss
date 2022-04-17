@@ -15,5 +15,21 @@ body
         justify-content: center;
         color: white;
         font-size: 1.2em;
+        article
+        {
+            .button
+            {
+                display: flex;
+                justify-content: center;
+                margin-top: 5vh;
+                input
+                {
+                    padding: 1%;
+                    font-weight: bold;
+                    background-color: goldenrod;
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }

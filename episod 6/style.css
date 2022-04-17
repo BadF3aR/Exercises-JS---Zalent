@@ -24,4 +24,21 @@ body main {
   color: white;
   font-size: 1.2em;
 }
+
+body main article .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5vh;
+}
+
+body main article .button input {
+  padding: 1%;
+  font-weight: bold;
+  background-color: goldenrod;
+  font-size: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
