@@ -1,4 +1,19 @@
 body
 {
-    background-color: grey;
+    background-color: rgb(70, 70, 70);
+    header
+    {
+        color: goldenrod;
+        text-shadow: 0px 2px 5px black ;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+    }
+    main
+    {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 1.2em;
+    }
 }

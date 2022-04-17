@@ -1,4 +1,27 @@
 body {
-  background-color: grey;
+  background-color: #464646;
+}
+
+body header {
+  color: goldenrod;
+  text-shadow: 0px 2px 5px black;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=style.css.map */
